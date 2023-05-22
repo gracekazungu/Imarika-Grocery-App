@@ -7,137 +7,83 @@
     tools:context=".ProductPage">
 
     <ImageView
-        android:id="@+id/imageView14"
-        android:layout_width="415dp"
-        android:layout_height="725dp"
+        android:id="@+id/imageView7"
+        android:layout_width="135dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/image" />
-
-    <ImageView
-        android:id="@+id/imageView18"
-        android:layout_width="149dp"
-        android:layout_height="137dp"
-        android:layout_marginStart="138dp"
-        android:layout_marginTop="2dp"
-        android:layout_marginBottom="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.04"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.159"
-        app:srcCompat="@drawable/cam" />
+        app:srcCompat="@drawable/baseline_upload_file_24" />
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/tilName"
-        android:layout_width="0dp"
-        android:layout_height="55dp"
+        android:id="@+id/tilPname"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="32dp"
         android:layout_marginEnd="16dp"
-        android:textColorHint="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView18"
-        app:layout_constraintVertical_bias="0.0">
+        app:layout_constraintTop_toBottomOf="@+id/imageView7">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/etName"
+            android:id="@+id/etPname"
             android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:background="#0B6623"
-            android:fontFamily="sans-serif"
-            android:hint="   Product Name"
-            android:textColor="@color/white"
-            android:textSize="20sp" />
+            android:layout_height="50dp"
+            android:hint=" Product Name"
+            android:textColor="@color/white" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/tilDescription"
-        android:layout_width="0dp"
-        android:layout_height="57dp"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginBottom="250dp"
-        android:textColorHint="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/tilName">
+        app:layout_constraintTop_toBottomOf="@+id/tilPname">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/etDescription"
             android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:background="#0B6623"
-            android:fontFamily="sans-serif"
-            android:hint="  Description"
-            android:textColor="@color/white"
-            android:textSize="20sp" />
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/tilCategory"
-        android:layout_width="0dp"
-        android:layout_height="56dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="16dp"
-        android:textColorHint="@color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tilDescription">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/etCategory"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:background="#0B6623"
-            android:fontFamily="sans-serif"
-            android:hint=" Category"
-            android:textColor="@color/white"
-            android:textColorHint="@color/white"
-            android:textSize="20sp" />
+            android:layout_height="52dp"
+            android:hint=" Product Description"
+            android:shadowColor="@color/white"
+            android:textColor="@color/white" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/tilQuantity"
-        android:layout_width="0dp"
-        android:layout_height="58dp"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="32dp"
         android:layout_marginEnd="16dp"
-        android:textColorHint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tilCategory">
+        app:layout_constraintTop_toBottomOf="@+id/tilDescription">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/etQuantity"
             android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:background="#0B6623"
-            android:fontFamily="sans-serif"
-            android:hint="Quantity e.g in Kg,g"
-            android:textColor="@color/white"
-            android:textColorHint="@color/white"
-            android:textSize="20sp" />
+            android:layout_height="51dp"
+            android:hint=" Quantity( Kg)" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/tilPrice"
-        android:layout_width="0dp"
-        android:layout_height="56dp"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="32dp"
         android:layout_marginEnd="16dp"
-        android:textColorHint="@color/white"
+        android:layout_marginBottom="195dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tilQuantity">
@@ -145,38 +91,35 @@
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/etPrice"
             android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:background="#0B6623"
-            android:hint=" Price e.g Ksh"
-            android:textSize="20sp" />
+            android:layout_height="52dp"
+            android:hint=" Price (ksh)" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
         android:id="@+id/btnUpload"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="52dp"
-        android:layout_marginTop="16dp"
-        android:background="#0B6623"
-        android:text="Upload"
-        android:textColor="@color/white"
-        android:textColorHint="@color/white"
-        android:textSize="20sp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="47dp"
+        android:layout_marginEnd="318dp"
+        android:layout_marginBottom="113dp"
+        android:text=" Upload"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/tilPrice" />
 
     <Button
-        android:id="@+id/btnDel"
+        android:id="@+id/btnOrder"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="670dp"
-        android:layout_marginEnd="32dp"
-        android:background="#0B6623"
-        android:text="DELETE"
-        android:textColor="@color/white"
-        android:textSize="20sp"
+        android:layout_marginStart="171dp"
+        android:layout_marginTop="47dp"
+        android:layout_marginEnd="59dp"
+        android:layout_marginBottom="113dp"
+        android:text=" SeeOrder"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-
+        app:layout_constraintStart_toEndOf="@+id/btnUpload"
+        app:layout_constraintTop_toBottomOf="@+id/tilPrice" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -116,7 +116,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="53dp"
                 android:background="#0B6623"
-                android:text="Buy Now" />
+                android:text="Buy Now"
+                android:textColor="@color/white" />
 
             <TextView
                 android:layout_width="345dp"
@@ -124,16 +125,13 @@
                 android:text="My Orders"
                 android:textSize="24sp"
                 android:textStyle="bold" />
+
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="#0B6623"
                 android:text="Cancel order"
-                android:background="#0B6623"/>
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="424dp"
-                android:src="@drawable/imge" />
+                android:textColor="@color/white" />
 
         </LinearLayout>
 
