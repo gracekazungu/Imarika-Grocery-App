@@ -35,27 +35,31 @@
 
     <Button
         android:id="@+id/btnbutton2"
-        android:layout_width="165dp"
-        android:layout_height="47dp"
-        android:layout_marginStart="120dp"
-        android:layout_marginBottom="330dp"
+        android:layout_width="340dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginEnd="16dp"
         android:background="#0B6623"
         android:text="Mama Mboga"
         android:textColor="@color/white"
         android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvtextView" />
 
     <Button
         android:id="@+id/btnbutton3"
-        android:layout_width="166dp"
-        android:layout_height="46dp"
-        android:layout_marginStart="120dp"
-        android:layout_marginBottom="240dp"
+        android:layout_width="340dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginEnd="16dp"
         android:background="#0B6623"
         android:text="Customer"
         android:textColor="@color/white"
         android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnbutton2" />
 </androidx.constraintlayout.widget.ConstraintLayout>

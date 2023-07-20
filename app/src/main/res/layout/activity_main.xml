@@ -18,9 +18,10 @@
 
     <TextView
         android:id="@+id/tvtextView2"
-        android:layout_width="384dp"
+        android:layout_width="340dp"
         android:layout_height="100dp"
         android:layout_marginTop="150dp"
+        android:layout_marginEnd="16dp"
         android:fontFamily="sans-serif-black"
         android:text="Hi, Welcome to the Imarika Groceries!"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
@@ -28,19 +29,6 @@
         android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/btnbutton"
-        android:layout_width="202dp"
-        android:layout_height="57dp"
-        android:layout_marginStart="100dp"
-        android:layout_marginBottom="48dp"
-        android:background="#0B6623"
-        android:text="SIGN IN"
-        android:textColor="@color/white"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
         android:id="@+id/imageView11"
@@ -54,11 +42,28 @@
 
     <ImageView
         android:id="@+id/imageView12"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
         android:layout_marginBottom="80dp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView8"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/imge" />
+
+    <Button
+        android:id="@+id/btnbutton"
+        android:layout_width="340dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="600dp"
+        android:layout_marginEnd="16dp"
+        android:background="#05490D"
+        android:text="SIGNUP"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView8" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
